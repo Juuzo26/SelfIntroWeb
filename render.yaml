@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: phong-portfolio
+    runtime: static
+    buildCommand: pip install pillow && python3 make_gallery.py
+    staticPublishPath: .

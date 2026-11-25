@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add("js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mai Thái Phong — Fullstack &amp; AI Developer</title>
+<meta name="description" content="Portfolio of Mai Thái Phong: fullstack development, LLM integration, computer vision and data engineering. Based in Ho Chi Minh City.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23FF9F1C%22/><text x=%2250%22 y=%2272%22 font-size=%2262%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-weight=%22700%22 fill=%22%230E1B2C%22>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<div class="bar"></div>
+<header class="top">
+  <a href="#" class="logo">Phong Mai</a>
+  <nav><a href="#work">Work</a><a href="#activities">Activities</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#recognition">Recognition</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <h1>Mai Thái Phong</h1>
+  <p class="role">I work as a <span id="role">fullstack developer</span></p>
+  <p class="lede">I build software that finds the fastest way through messy data: Python microservices, LLM pipelines, computer vision, and the apps around them. Based in Ho Chi Minh City.</p>
+  <figure class="sim">
+    <canvas id="grid" aria-label="Interactive A* route finder on a city grid. Click blocks to close roads and watch the route change."></canvas>
+    <figcaption>This is A* routing, the algorithm behind my traffic project. Click the grid to close a road.</figcaption>
+  </figure>
+</section>
+
+
+<section class="about">
+  <div class="ph portrait"><span>Portrait</span><img src="assets/web/portrait.webp" alt="Portrait of Mai Thái Phong" onerror="this.remove()"></div>
+  <div>
+    <h2>About</h2>
+    <p>Final-year Software Engineering student at Ton Duc Thang University (GPA 8.04/10, 100% English-taught program). I take a project from data collection to model training to API design to deployment, and I review everything an AI assistant writes before it ships.</p>
+    <p>Co-founder and CTO of the Starting Blocks think tank, where I run the data and AI analysis. Business Analyst on client projects for Silicon Stack alongside my studies.</p>
+    <ul class="facts">
+      <li><b>10K+</b> requests a day on services I built</li>
+      <li><b>0.959</b> IoU for road segmentation</li>
+      <li><b>20%</b> shorter estimated routes</li>
+      <li><b>ICIIT 2027</b> paper accepted</li>
+    </ul>
+  </div>
+</section>
+
+<section id="work">
+  <h2>Selected work</h2>
+  <div class="cards">
+    <article class="card" style="--c:var(--a1)">
+      <div class="ph"><span>Traffic map screenshot</span><img src="assets/web/traffic.webp" alt="Smart Traffic Navigation System dashboard" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>Smart Traffic Navigation System</h3>
+        <p>Team lead. Reads 20+ public traffic cameras, segments roads and vehicles with a UNet model, turns density into live weights for A* routing, and controls signals with the Webster algorithm. Runs on AWS EC2 with a Flutter app for emergency responders and a FastAPI dashboard for control centers.</p>
+        <p class="meta">2nd prize at TDTU. EUREKA 2025 semi-finalist. Accepted at ICIIT 2027.</p>
+        <p class="tags"><span>UNet segmentation</span><span>A*</span><span>FastAPI</span><span>Flutter</span><span>AWS EC2</span></p>
+      </div>
+    </article>
+    <article class="card" style="--c:var(--a2)">
+      <div class="ph"><span>FaceCheck screenshot</span><img src="assets/web/facecheck.webp" alt="FaceCheck attendance app" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>FaceCheck</h3>
+        <p>Face-recognition attendance. Mobile data capture, a Django backend, and models that reached 95% accuracy over 10,000 images. Designed to scale to 5,000+ identities.</p>
+        <p class="tags"><span>TensorFlow</span><span>OpenCV</span><span>Django</span><span>Flutter</span></p>
+      </div>
+    </article>
+    <article class="card" style="--c:var(--a3)">
+      <div class="ph"><span>Water puppetry scene</span><img src="assets/web/puppetry.webp" alt="Vietnamese Water Puppetry 3D app" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>Vietnamese Water Puppetry 3D</h3>
+        <p>An interactive 3D cultural app with voice guidance and mini-games. Gemini handles audio transcription, benchmarked against Whisper at 97% accuracy.</p>
+        <p class="meta">Consolation prize, UEH Flow Z Hackathon.</p>
+        <p class="tags"><span>Flutter</span><span>Gemini API</span><span>Whisper</span></p>
+      </div>
+    </article>
+    <article class="card" style="--c:var(--a4)">
+      <div class="ph"><span>FloodGuard screenshot</span><img src="assets/web/floodguard.webp" alt="FloodGuard app" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>FloodGuard</h3>
+        <p>A flood decision-support app for rice farmers, built by Team Delta for Bách Khoa Innovation 2026 and pitched to an industry judge.</p>
+        <p class="tags"><span>Decision support</span><span>Agritech</span></p>
+      </div>
+    </article>
+    <article class="card" style="--c:var(--a2)">
+      <div class="ph"><span>Starting Blocks site</span><img src="assets/web/starting-blocks.webp" alt="Starting Blocks think tank" onerror="this.remove()"></div>
+      <div class="body">
+        <h3>Starting Blocks think tank</h3>
+        <p>Co-founder and CTO. I run the analysis behind client missions and contribute to publications, including the white paper <i>Skills for Jobs of 2040</i>.</p>
+        <p class="tags"><span>Data analysis</span><span>AI</span><span>Odoo</span></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="activities">
+  <h2>Beyond the code</h2>
+  <p class="sub">Competitions, events and other things I took part in.</p>
+  <div class="carousel">
+    <div class="track" tabindex="0" aria-label="Activity photos. Scroll sideways or use the arrows."></div>
+    <div class="ctrl"><button class="prev" aria-label="Previous photo">&#8249;</button><div class="dots"></div><button class="next" aria-label="Next photo">&#8250;</button></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <ol class="timeline">
+    <li><h3>Co-Founder, CTO &amp; Data Analyst</h3><p class="meta">Starting Blocks think tank · Present</p>
+      <p>Lead technology and analysis for research and consulting missions, and publish on the organization's Odoo site.</p></li>
+    <li><h3>Fullstack Developer</h3><p class="meta">Titan Technology Corporation · Jan–May 2026</p>
+      <p>Built backend services for an AI personalization platform: Python Haystack microservices, a data ingestion pipeline that saved 5 hours a week, and an LLM pipeline extracting knowledge from 1K+ conversations at 90% accuracy. Shipped about 10 features across REST APIs and a React frontend, with Redis, RabbitMQ, Keycloak and Docker.</p></li>
+    <li><h3>Business Analyst</h3><p class="meta">Silicon Stack (Australia) · During university studies</p>
+      <p>Gathered and documented requirements on external client projects, and translated between business stakeholders and technical teams.</p></li>
+    <li><h3>Team Lead, student research</h3><p class="meta">Traffic Navigation and FaceCheck · 2023–2025</p>
+      <p>Led two award-recognized research projects supervised by Ths. Nguyễn Thanh An.</p></li>
+  </ol>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>AI and LLMs</h3><p>Claude Code, Cursor, Copilot, Gemini API, LLM pipelines, structured output, MCP connectors, prompt engineering</p></div>
+    <div><h3>Backend</h3><p>Python, FastAPI, Django, Express.js, microservices, REST design, Redis, RabbitMQ, Keycloak</p></div>
+    <div><h3>Frontend and mobile</h3><p>React, Vite, JavaScript, HTML/CSS, Flutter (Android and iOS)</p></div>
+    <div><h3>Data and ML</h3><p>scikit-learn, XGBoost, LightGBM, TensorFlow, OpenCV, MediaPipe, UNet, Pandas, NumPy, ETL, Selenium</p></div>
+    <div><h3>Infrastructure</h3><p>Docker, AWS EC2, Render, Git/GitHub, Playwright</p></div>
+    <div><h3>Business analysis</h3><p>Requirements gathering, stakeholder communication, SQL, documentation, presentation</p></div>
+  </div>
+</section>
+
+<section id="recognition">
+  <h2>Recognition</h2>
+  <ul class="awards">
+    <li><b>ICIIT 2027</b> accepted paper: Vision-Based Traffic Density Estimation and Emergency-Priority Navigation for Urban Traffic Management</li>
+    <li><b>EUREKA 2025</b> Student Innovation Award, semi-finalist</li>
+    <li><b>2nd prize</b>, TDTU Faculty of IT Research Competition (2025)</li>
+    <li><b>Consolation prize</b>, UEH Flow Z Hackathon (2025)</li>
+    <li><b>100% tuition scholarship</b>, TDTU (2022)</li>
+    <li><b>IELTS 6.5</b> (B2)</li>
+  </ul>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let's talk</h2>
+  <p>I'm open to software, AI and analyst roles starting in 2027.</p>
+  <p class="links"><a href="mailto:phongth779@gmail.com">phongth779@gmail.com</a><a href="https://www.linkedin.com/in/phong-mai-2448892a4/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Juuzo26" target="_blank" rel="noopener">GitHub</a><a href="assets/Mai-Thai-Phong-CV.pdf" download>Download CV</a></p>
+</section>
+</main>
+<footer>© <span id="yr">2026</span> Mai Thái Phong · Ho Chi Minh City</footer>
+<script src="assets/web/carousel/photos.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
